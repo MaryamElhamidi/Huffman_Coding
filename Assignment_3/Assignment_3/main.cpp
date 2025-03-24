@@ -11,7 +11,7 @@ using namespace std;
 
 
 //will define the max size of Huffman Tree as 100
-#define MAX_SIZE 100;
+#define MAX_SIZE 100
 
 //huffman tree node class
 
@@ -62,16 +62,34 @@ public:
         return right;
     }
 
-    int getFrequency()
+    int getFrequency() const
     {
         return frequency;
     }
 
 };
 
+
+//define comparator class which will compare to look for nodes with a smaller frequency and add them to the priority queue
+//first which will ensure they have a higher priority meaning they will come out first
+//they need to come out first because we will be merging them to create the final Huffman Tree which has one node.
+
+
+//
+
+class CompareHNodes
+{
+public:
+    bool operator()(HNode* first, HNode* second)
+    {
+        return first->getFrequency() > second->getFrequency(); //will compare frequencies of the two nodes and return true if first is 
+        //bigger or has a higher frequency  than second and false otherwise. If first has a larger frequency, then it will have a lower priority
+        //in the priority queue.
+    }
+};
 // test commit
 //testing push/pull for gitrepo
-#include <iostream>
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
