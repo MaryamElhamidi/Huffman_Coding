@@ -16,6 +16,7 @@ using namespace std;
 //huffman tree node class
 
 
+//can remove getFrequency() because is a publically accessed
 class HNode
 {
 public:
@@ -36,7 +37,7 @@ public:
     two nodes together*/
     HNode(HNode* l, HNode* r) {
         character = '\0'; //no chars stored in internal node
-        frequency = l->getFrequency() + r->getFrequency();
+        frequency = l->frequency + r->frequency;
         left = l;
         right = r;
 
@@ -62,11 +63,6 @@ public:
         return right;
     }
 
-    int getFrequency() const
-    {
-        return frequency;
-    }
-
 };
 
 
@@ -74,19 +70,45 @@ public:
 //first which will ensure they have a higher priority meaning they will come out first
 //they need to come out first because we will be merging them to create the final Huffman Tree which has one node.
 
-
-//
-
 class CompareHNodes
 {
 public:
     bool operator()(HNode* first, HNode* second)
     {
-        return first->getFrequency() > second->getFrequency(); //will compare frequencies of the two nodes and return true if first is 
+        return first->frequency > second->frequency; //will compare frequencies of the two nodes and return true if first is 
         //bigger or has a higher frequency  than second and false otherwise. If first has a larger frequency, then it will have a lower priority
         //in the priority queue.
     }
 };
+
+
+//create function which will generate Huffman tree according to algorithm 
+
+HNode* generateHuffmanTree(priority_queue<HNode*, vector<HNode*>,CompareHNodes> pQueue) //using Priority queue present in STL, we are able to use
+//the CompareHNodes defined above to ensure our queue is sorted properly. The nodes with the smallest frequencies will at at the top of the queue
+{
+    //keep looping until one node lefts in priority queue due to structure of Huffman Tree
+    while(pQueue.size()!=1)
+    {
+
+        //node with least frequency from priority queue is stored in left
+
+        HNode* left = pQueue.top();
+        pQueue.pop(); //then this leat frequency will be popped so we can access next element
+        
+        //node with the next least frequency is stored in right
+        HNode* right = pQueue.top();
+        pQueue.pop(); //pop this node from priority queue.
+
+        //a new node must be made which stores the frequency of left and right combined
+        HNode* node= new HNode(left->frequency + right->frequency)
+
+
+
+
+
+    }
+}
 // test commit
 //testing push/pull for gitrepo
 
