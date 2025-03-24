@@ -101,14 +101,32 @@ HNode* generateHuffmanTree(priority_queue<HNode*, vector<HNode*>,CompareHNodes> 
         pQueue.pop(); //pop this node from priority queue.
 
         //a new node must be made which stores the frequency of left and right combined
-        HNode* node= new HNode(left->frequency + right->frequency)
+        HNode* node = new HNode(left->frequency + right->frequency);
 
+        //assigns the two nodes we got earlier from priority queue as left and right. The new node
+        //is an internal node and has the frequency of left and right combined.
+        node->left = left;
+        node->right = right;
 
-
-
-
+        //this new node needs to be pushed back into priority queue so we can continue until one node left
+        pQueue.push(node);
     }
+
+    //after while loop,  return the top on the priority queue which will be the one node left
+    return pQueue.top();
 }
+
+
+//Harsheta Sharma 3/23/2025 10:55pm - Tried committing after creating the generateHuffmanTree but failed to commit
+// Commit message: completed the generateHuffmanTree method which generates the Huffman tree using the priority queue present in the STL
+
+
+//emthod to print huffman code for debugging
+void printHuffmanCodes(HNode* root, int arr[], int top)
+{
+    
+}
+
 // test commit
 //testing push/pull for gitrepo
 
