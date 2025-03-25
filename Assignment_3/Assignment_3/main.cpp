@@ -141,7 +141,7 @@ void generateCodes(HNode* root, const string &code, string codes[256]) {
     generateCodes(root->left, code + "0", codes);
     generateCodes(root->right, code + "1", codes);
 }
-
+// commit to see if janki can see
 // --------------------------------------------------------
 
 int main(int argc, const char * argv[]) {
