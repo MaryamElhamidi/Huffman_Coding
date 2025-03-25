@@ -127,9 +127,22 @@ void printHuffmanCodes(HNode* root, int arr[], int top)
     
 }
 
-// test commit
-//testing push/pull for gitrepo
+// --------------------------------------------------------
+// Maryam's Implementation
 
+// Recursive function to traverse the Huffman tree and generate codes, codes are stored in an array indexed by the ASCII value.
+void generateCodes(HNode* root, const string &code, string codes[256]) {
+    if (!root)
+        return;
+    // If this is a leaf node, save the code for the character.
+    if (!root->left && !root->right) {
+        codes[(unsigned char)root->character] = code;
+    }
+    generateCodes(root->left, code + "0", codes);
+    generateCodes(root->right, code + "1", codes);
+}
+
+// --------------------------------------------------------
 
 int main(int argc, const char * argv[]) {
     // insert code here...
