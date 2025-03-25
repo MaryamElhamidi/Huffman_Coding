@@ -146,8 +146,8 @@ void generateCodes(HNode* root, const string &code, string codes[256]) {
 // commit to see if janki can see
 // --------------------------------------------------------
 void decodeCodes(string codes[256], string decodedMessage) {
-    Hnode* i = new HNode();
-    for (char c : codes)
+    HNode* i = new HNode();
+    for (char c : codes){
         while(i->character == '\0') {
             if (c == 0) {
                 i = i->left;
@@ -156,6 +156,7 @@ void decodeCodes(string codes[256], string decodedMessage) {
                 i = i->right;
             }
         }
+    }
     decodedMessage.append(i->character);
 }
 
