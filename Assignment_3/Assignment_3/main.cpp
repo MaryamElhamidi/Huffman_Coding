@@ -24,6 +24,8 @@ public:
     char character; //leaf nodes only
     int frequency;//internal nodes only
 
+    HNode() {};
+
     //two constructors will be needed one for leaf nodes, other for internal nodes
     /* Constructor for leaf nodes */
     HNode(char c, int freq) {
@@ -143,6 +145,19 @@ void generateCodes(HNode* root, const string &code, string codes[256]) {
 }
 // commit to see if janki can see
 // --------------------------------------------------------
+void decodeCodes(string codes[256], string decodedMessage) {
+    Hnode* i = new HNode();
+    for (char c : codes)
+        while(i->character == '\0') {
+            if (c == 0) {
+                i = i->left;
+            }
+            else if (c == 1) {
+                i = i->right;
+            }
+        }
+    decodedMessage.append(i->character);
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
