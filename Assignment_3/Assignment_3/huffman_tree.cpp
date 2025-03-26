@@ -121,12 +121,12 @@ HNode* generateHuffmanTree(priority_queue<HNode*, vector<HNode*>, CompareHNodes>
 
 
 
-
-//method to print huffman code for debugging
-void printHuffmanCodes(HNode* root, int arr[], int top)
-{
-
-}
+//
+////method to print huffman code for debugging
+//void printHuffmanCodes(HNode* root, int arr[], int top)
+//{
+//
+//}
 
 
 
