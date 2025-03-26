@@ -24,15 +24,21 @@ int main(int argc, const char * argv[]) {
         inputText = readFile(fileName);
     }
 
-    // find fequency
-    // build tree
-    // encode
+    HNode* root = buildHuffmanTree(int freq[256]);
+    string encodedText = "";
+    generateCodes(root, encodedText, string codes[256]);
+    cout << encodedText << endl;
+    try {
+        while (writeFile(fileName, encodedText) == false) {
+            throw runtime_error("could not open file");
+            cout << "Please enter name of file to save Huffman code: " << endl;
+            cin >> fileName;
+            writeFile(fileName, encodedText);
+            }
+        }
 
-    writeFile(fileName, data);
-    cout << data;
-
-    string encodedText = readFile(fileName);
-    string decodedText = decodeCodes(encodedText, pq.top);
+    encodedText = readFile(fileName);
+    string decodedText = decodeCodes(encodedText, root);
     cout << decodedText << endl;
 
     return 0;
