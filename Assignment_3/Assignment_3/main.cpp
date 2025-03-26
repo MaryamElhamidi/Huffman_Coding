@@ -5,10 +5,12 @@
 //  Created by Maryam Elhamidi on 2025-03-21.
 //
 
+#include "huffman_encoding.h"
+#include "huffman_tree.h"
 #include <iostream>
 using namespace std;
 
-// --------------------------------------------------------
+// -------------------------------------------------------- Janki implementation
 string decodeCodes(const string& code, HNode* root) {
 
     string decodedText = ""; 
@@ -37,7 +39,9 @@ string decodeCodes(const string& code, HNode* root) {
 }
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
+    
+    string filename;
+    string readfi
     std::cout << "Hello, World!\n";
     return 0;
 }
