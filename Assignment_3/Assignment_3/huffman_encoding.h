@@ -18,6 +18,6 @@ void generateCodes(HNode* root, const string &code, string codes[256]);
 // Function to build a Huffman tree from a character frequency table
 HNode* buildHuffmanTree(int freq[256]);
 
-string decodeCodes(const string& code, HNode* root) {};
+string decodeCodes(const string& code, HNode* root);
 
 #endif

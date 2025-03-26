@@ -6,6 +6,7 @@
 //
 
 #include "huffman_encoding.h"
+#include "huffman_tree.h"
 #include <queue>
 #include <iostream>
 
@@ -39,52 +40,54 @@ HNode* buildHuffmanTree(int freq[256]) {
             pq.push(new HNode((char)i, freq[i]));  // Push a new HNode into the priority queue
         }
     }
-    if (pq.empty()) // if the queue is empty, return nullptr (no Huffman tree can be built)
-        return nullptr;
-
-    // Step 2: Build the Huffman tree by repeatedly merging the two smallest nodes
-    while (pq.size() > 1) {
-        // Extract the two nodes with the lowest frequency
-        HNode* left = pq.top();  // Smallest frequency node
-        pq.pop();  // Remove it from the priority queue
-
-        HNode* right = pq.top();  // Second smallest frequency node
-        pq.pop();  // Remove it from the priority queue
-
-        // Create a new internal node by combining these two nodes.
-        // The new node's frequency is the sum of both children's frequencies.
-        HNode* node = new HNode(left, right);
-
-        pq.push(node); // Push the newly created internal node back into the priority queue to ensure that the next lowest frequency nodes will be merged in the next loop iteration.
-    }
-    // After the loop, only one node remains in the queue. This node is the root of the Huffman tree.
+//    if (pq.empty()) // if the queue is empty, return nullptr (no Huffman tree can be built)
+//        return nullptr;
+//
+//    // Step 2: Build the Huffman tree by repeatedly merging the two smallest nodes
+//    while (pq.size() > 1) {
+//        // Extract the two nodes with the lowest frequency
+//        HNode* left = pq.top();  // Smallest frequency node
+//        pq.pop();  // Remove it from the priority queue
+//
+//        HNode* right = pq.top();  // Second smallest frequency node
+//        pq.pop();  // Remove it from the priority queue
+//
+//        // Create a new internal node by combining these two nodes.
+//        // The new node's frequency is the sum of both children's frequencies.
+//        HNode* node = new HNode(left, right);
+//
+//        pq.push(node); // Push the newly created internal node back into the priority queue to ensure that the next lowest frequency nodes will be merged in the next loop iteration.
+//    }
+//    // After the loop, only one node remains in the queue. This node is the root of the Huffman tree.
+//    return pq.top();
+    generateHuffmanTree(pq);
     return pq.top();
 }
 // --------------------------------------------------------
 // -------------------------------------------------------- Janki implementation
 string decodeCodes(const string& code, HNode* root) {
 
-    string decodedText = "";
-    *HNode iteratorNode = root;
+    string decodeMessage = "";
+    HNode* iteratorNode = root;
 
     for (char bit : code) {
 
         if (bit == '0')
         {
-            i = i->left;
+            iteratorNode= iteratorNode->left;
         }
         else if (bit == '1')
         {
-            i = i->right;
+            iteratorNode = iteratorNode->right;
         }
 
-        if (i->left == nullptr && i->right == nullptr)
+        if (iteratorNode->left == nullptr && iteratorNode->right == nullptr)
         {
-            decodedText += i->character;
-            i = root;
+            decodeMessage += iteratorNode->character;
+            iteratorNode = root;
         }
 
-        return decodedText;
+        return decodeMessage;
     }
 
 }
