@@ -28,18 +28,15 @@ int main(int argc, const char * argv[]) {
     string encodedText = "";
     generateCodes(root, encodedText, string codes[256]);
     cout << encodedText << endl;
-    try {
-        while (writeFile(fileName, encodedText) == false) {
-            throw runtime_error("could not open file");
-            cout << "Please enter name of file to save Huffman code: " << endl;
-            cin >> fileName;
-            writeFile(fileName, encodedText);
-            }
-        }
-
-    encodedText = readFile(fileName);
-    string decodedText = decodeCodes(encodedText, root);
-    cout << decodedText << endl;
+    while (writeFile(fileName, encodedText) == false) { 
+        throw runtime_error("Could not open file"); 
+        cout << "Please enter name of file to save Huffman code: " << endl; 
+        cin >> fileName; 
+        writeFile(fileName, encodedText); 
+    }
+    encodedText = readFile(fileName); 
+    string decodedText = decodeCodes(encodedText, root); 
+    cout << decodedText << endl; 
 
     return 0;
 }
