@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
         inputText = readFile(fileName);
     }
 
-    HNode* root = buildHuffmanTree(int freq[256]);
+    HNode* root = buildHuffmanTree(int (freq[256]);
     string encodedText = "";
     generateCodes(root, encodedText, string codes[256]);
     cout << encodedText << endl;
@@ -39,4 +39,5 @@ int main(int argc, const char * argv[]) {
     cout << decodedText << endl; 
 
     return 0;
-}
+                                   }
+                                   }
