@@ -71,23 +71,22 @@ string decodeCodes(const string& code, HNode* root) {
     HNode* iteratorNode = root;
 
     for (char bit : code) {
-
+        
         if (bit == '0')
         {
-            iteratorNode= iteratorNode->left;
+            iteratorNode= iteratorNode->getLeft();
         }
-        else if (bit == '1')
+        else
         {
-            iteratorNode = iteratorNode->right;
+            iteratorNode = iteratorNode->getRight();
         }
-
-        if (iteratorNode->left == nullptr && iteratorNode->right == nullptr)
+        // Check if the current node is a leaf node
+        if (!iteratorNode->getLeft() && !iteratorNode->getRight())
         {
             decodeMessage += iteratorNode->character;
             iteratorNode = root;
         }
-
-        return decodeMessage;
     }
-
+    return decodeMessage;
 }
+
