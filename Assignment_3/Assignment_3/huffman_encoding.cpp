@@ -66,28 +66,40 @@ HNode* buildHuffmanTree(int freq[256]) {
 
 // --------------------------------------------------------
 //Janki implementation
+// Method to decode the encoded text by taking the encoded string and root node to traverse tree
 string decodeCodes(const string& code, HNode* root) {
 
+    // make an empty string to append decoded characters to 
     string decodeMessage = "";
+    // set the node to traverse the tree at the root
     HNode* iteratorNode = root;
 
+    // iterate through each bit of the encoded text string to determine which path to take
     for (char bit : code) {
-        
+
+        // if the bit is a 0 travel to the left node
         if (bit == '0')
         {
-            iteratorNode= iteratorNode->getLeft();
+            // set the iterator node as the node on the left of current node
+            iteratorNode = iteratorNode->getLeft();
         }
+        // if the bit is not 0 it will be 1 as the code is binary, then travel to the right node
         else
         {
+            // set the iterator node as the node on the right of current node
             iteratorNode = iteratorNode->getRight();
         }
-        // Check if the current node is a leaf node
+        // Check if the current node is a leaf node by checking if both the left and right nodes are null
         if (!iteratorNode->getLeft() && !iteratorNode->getRight())
         {
+            // take the character stored in the leaf node and concatenate to decodedMessasge string
             decodeMessage += iteratorNode->character;
+            // set iterator node to the root to traverse tree again for next code
             iteratorNode = root;
         }
     }
+    // after iterating through encoded text string and decoding all characters return decodedMessage string
+    // holding the decoded text
     return decodeMessage;
 }
 // --------------------------------------------------------

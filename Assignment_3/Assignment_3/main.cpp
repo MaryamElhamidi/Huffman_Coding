@@ -66,6 +66,9 @@ int main() {
         encodedText += codes[(unsigned char)c];
     }
 
+    // Display encoded text to user
+    cout << "Encoded Text: " << encodedText << endl;
+
     // Decode the text (demonstration)
     string decodedText = decodeCodes(encodedText, root);
     cout << "Decoded Text: " << decodedText << endl;

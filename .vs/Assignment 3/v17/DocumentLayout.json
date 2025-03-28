@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assignment_3\\Assignment_3\\huffman_tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_encoding.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assignment_3\\Assignment_3\\huffman_encoding.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assignment_3\\Assignment_3\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\file_handling.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assignment_3\\Assignment_3\\file_handling.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_encoding.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assignment_3\\Assignment_3\\huffman_encoding.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_tree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,39 +58,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "huffman_encoding.h",
+              "DocumentMoniker": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_encoding.h",
+              "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\huffman_encoding.h",
+              "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_encoding.h",
+              "RelativeToolTip": "Assignment_3\\Assignment_3\\huffman_encoding.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-26T11:54:18.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "huffman_encoding.cpp",
+              "DocumentMoniker": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_encoding.cpp",
+              "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\huffman_encoding.cpp",
+              "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_encoding.cpp",
+              "RelativeToolTip": "Assignment_3\\Assignment_3\\huffman_encoding.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-26T11:40:16.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "file_handling.h",
               "DocumentMoniker": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\file_handling.h",
               "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\file_handling.h",
               "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\file_handling.h",
               "RelativeToolTip": "Assignment_3\\Assignment_3\\file_handling.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T00:35:37.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T00:35:37.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "file_handling.cpp",
               "DocumentMoniker": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\file_handling.cpp",
               "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\file_handling.cpp",
               "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\file_handling.cpp",
               "RelativeToolTip": "Assignment_3\\Assignment_3\\file_handling.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-25T18:40:48.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "huffman_tree.h",
               "DocumentMoniker": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_tree.h",
               "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\huffman_tree.h",
               "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_tree.h",
               "RelativeToolTip": "Assignment_3\\Assignment_3\\huffman_tree.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-24T13:04:21.92Z"
             },
@@ -94,20 +126,20 @@
               "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\huffman_tree.cpp",
               "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\huffman_tree.cpp",
               "RelativeToolTip": "Assignment_3\\Assignment_3\\huffman_tree.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-24T13:04:20.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\main.cpp",
               "RelativeDocumentMoniker": "Assignment_3\\Assignment_3\\main.cpp",
               "ToolTip": "C:\\VSProjects\\PROG23672\\Assignment 3\\Assignment_3\\Assignment_3\\main.cpp",
               "RelativeToolTip": "Assignment_3\\Assignment_3\\main.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAE8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T23:58:56.751Z",
               "EditorCaption": ""
