@@ -5,8 +5,8 @@
 //  Created by Maryam Elhamidi on 2025-03-21.
 //
 
-#ifndef FILEHANDLER_H
-#define FILEHANDLER_H
+#ifndef FILE_HANDLING_H
+#define FILE_HANDLING_H
 
 #include <string>
 using namespace std;

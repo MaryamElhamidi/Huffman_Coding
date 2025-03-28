@@ -7,7 +7,7 @@
 #ifndef HUFFMAN_ENCODING_H
 #define HUFFMAN_ENCODING_H
 
-#include "huffman_tree.cpp"
+#include "huffman_tree.h"
 #include <string>
 
 using namespace std;
