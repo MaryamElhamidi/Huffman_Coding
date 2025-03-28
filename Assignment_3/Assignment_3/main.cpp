@@ -25,12 +25,15 @@ void printHuffmanCodes(const string codes[256]) {
 }
 
 int main() {
-    string fileName = "/Users/Yammy/Documents/huffman_test.txt"; // Hardcoded path
+    string fileName = "";//"/Users/Yammy/Documents/huffman_test.txt"; // Hardcoded path
 
     // if one of you guys want to try to make is dynamic here's an approach i tried, if you wanna build on it.
 //    string fileName;
 //    cout << "Please enter the full path of the file to encode: ";
 //    getline(cin, fileName);  // Use getline to allow spaces in file path if necessary
+
+    cout << "Please input file name: " << endl;
+    cin >> fileName;
 
     string text = readFile(fileName);
     if (text.empty()) {
