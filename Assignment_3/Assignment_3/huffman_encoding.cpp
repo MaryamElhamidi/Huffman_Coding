@@ -18,17 +18,17 @@ using namespace std;
 // Recursive function to traverse the Huffman tree and generate binary codes for each character.
 // These Huffman codes are stored in an array indexed by the ASCII value of each character.
 void generateCodes(HNode* root, const string &code, string codes[256]) {
-    if (!root) // base case, if the current node is null (empty tree or reached the end of a branch), return.
+    if (root ==  nullptr){ // base case, if the current node is null (empty tree or reached the end of a branch), return.
         return;
-    // If this is a leaf node, save the code for the character.
-    if (!root->left && !root->right) { // A leaf node is identified by having no left or right children.
-        codes[(unsigned char)root->character] = code; // Store the generated binary code for this character in the 'codes' array. The array is indexed using the ASCII value of the character.
+        // If this is a leaf node, save the code for the character.
     }
-
-    // Recursive case: Traverse the left and right subtrees
-    // Append '0' when going left and '1' when going right, following the Huffman encoding rules.
-    generateCodes(root->left, code + "0", codes);
-    generateCodes(root->right, code + "1", codes);
+    if (!root->getLeft() && !root->getRight()) { // A leaf node is identified by having no left or right children.
+    codes[(unsigned char)root->character] = code; // Store the generated binary code for this character in the 'codes' array. The array is indexed using the ASCII value of the character.
+    } else {     // Recursive case: Traverse the left and right subtrees
+        // Append '0' when going left and '1' when going right, following the Huffman encoding rules.
+        generateCodes(root->getLeft(), code + "0", codes);
+        generateCodes(root->getRight(), code + "1", codes);
+    }
 }
 // Function to build a Huffman tree from a frequency table.
 HNode* buildHuffmanTree(int freq[256]) {
