@@ -63,8 +63,9 @@ HNode* buildHuffmanTree(int freq[256]) {
     generateHuffmanTree(pq);
     return pq.top();
 }
+
 // --------------------------------------------------------
-// -------------------------------------------------------- Janki implementation
+//Janki implementation
 string decodeCodes(const string& code, HNode* root) {
 
     string decodeMessage = "";
@@ -89,4 +90,4 @@ string decodeCodes(const string& code, HNode* root) {
     }
     return decodeMessage;
 }
-
+// --------------------------------------------------------
