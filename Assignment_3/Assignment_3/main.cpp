@@ -13,10 +13,21 @@
 
 using namespace std;
 
+// Function to print Huffman codes cleanly using simple tabs for alignment
+void printHuffmanCodes(const string codes[256]) {
+    cout << "Huffman Codes:\n";
+    cout << "Character" << "\t" << "Code\n";
+    for (int i = 0; i < 256; ++i) {
+        if (!codes[i].empty()) {
+            cout << char(i) << "\t\t" << codes[i] << "\n";
+        }
+    }
+}
+
 int main() {
-    string fileName;
-    cout << "Please enter the name of the file to encode: ";
-    cin >> fileName;
+    string fileName = "/Users/Yammy/Documents/huffman_test.txt"; // Hardcoded path
+    // cout << "Please enter the name of the file to encode: ";
+    // cin >> fileName;
 
     string text = readFile(fileName);
     if (text.empty()) {
@@ -44,14 +55,9 @@ int main() {
     generateCodes(root, "", codes);
 
     // Print the Huffman codes
-    cout << "Huffman Codes:\n";
-    for (int i = 0; i < 256; ++i) {
-        if (!codes[i].empty()) {
-            cout << char(i) << ": " << codes[i] << endl;
-        }
-    }
+    printHuffmanCodes(codes);
 
-    // Optional: Encode the text using the Huffman codes
+    //Encode the text using the Huffman codes
     string encodedText;
     for (char c : text) {
         encodedText += codes[(unsigned char)c];
