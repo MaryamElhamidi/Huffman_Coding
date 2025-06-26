@@ -6,6 +6,14 @@ Developed as a group assignment for **Data Structures** at **Sheridan College**.
 
 ---
 
+## 👩‍💻 Team Members
+
+* **Maryam Elhamidi** – Encoding logic, file handling, compiler/debugging fixes, README
+* **Harsheta Sharma** – Huffman Tree construction, priority queue logic, complexity analysis
+* **Janki Patel** – File I/O, decoding, program integration, testing
+
+---
+
 ## 🛠 Features
 
 * Build Huffman Tree using a priority queue (min-heap)
@@ -84,14 +92,6 @@ Encoding and Decoding successful!
 
 ---
 
-## 👩‍💻 Team Members
-
-* **Maryam Elhamidi** – Encoding logic, file handling, compiler/debugging fixes, README
-* **Harsheta Sharma** – Huffman Tree construction, priority queue logic, complexity analysis
-* **Janki Patel** – File I/O, decoding, program integration, testing
-
----
-
 ## ⚠️ Notes
 
 * If file path errors occur, try hardcoding the path inside `main.cpp`.
@@ -99,11 +99,3 @@ Encoding and Decoding successful!
 * This project was developed on different environments (Windows/macOS), so behavior may vary slightly.
 
 ---
-
-## 📌 License
-
-This project was created for academic use only and is not licensed for commercial distribution.
-
----
-
-You can now copy this directly into your `README.md` file in GitHub or your local repo. Let me know if you want me to tailor it more or add screenshots, badges, or links!
